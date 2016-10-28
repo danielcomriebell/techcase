@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Microsoft Office User</Author>
+  <LastAuthor>Microsoft Office User</LastAuthor>
+  <Created>2016-10-28T03:05:33Z</Created>
+  <Version>15.0</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+  <PixelsPerInch>96</PixelsPerInch>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>16880</WindowHeight>
+  <WindowWidth>28160</WindowWidth>
+  <WindowTopX>640</WindowTopX>
+  <WindowTopY>1180</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62">
+   <NumberFormat ss:Format="d\-mmm"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="comma2 copy">
+  <Table ss:ExpandedColumnCount="4" ss:ExpandedRowCount="4" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="65" ss:DefaultRowHeight="16">
+   <Row>
+    <Cell><Data ss:Type="String">sample</Data></Cell>
+    <Cell><Data ss:Type="String">temperature</Data></Cell>
+    <Cell><Data ss:Type="String">pressure</Data></Cell>
+    <Cell><Data ss:Type="String">O2_saturation</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="DateTime">2016-02-21T00:00:00.000</Data></Cell>
+    <Cell><Data ss:Type="String">15Â°</Data></Cell>
+    <Cell><Data ss:Type="String">757mm</Data></Cell>
+    <Cell><Data ss:Type="String">0.0033/litre</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">lab_1-38</Data></Cell>
+    <Cell><Data ss:Type="String">22Â°</Data></Cell>
+    <Cell><Data ss:Type="String">788 mm</Data></Cell>
+    <Cell><Data ss:Type="String">0.0745/litre</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">failed_12/12/1979</Data></Cell>
+    <Cell><Data ss:Type="String">-19Â° C</Data></Cell>
+    <Cell><Data ss:Type="String">769mm</Data></Cell>
+    <Cell><Data ss:Type="String">0.0043 per liter</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <PageLayoutZoom>0</PageLayoutZoom>
+   <Selected/>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

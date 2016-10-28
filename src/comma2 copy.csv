@@ -1,0 +1,4 @@
+sample,temperature,pressure,O2_saturation
+feb-21,15°,757mm,0.0033/litre
+lab_1-38,22°,788 mm,0.0745/litre
+failed_12/12/1979,-19° C,769mm,0.0043 per liter

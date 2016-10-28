@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Microsoft Office User</Author>
+  <LastAuthor>Microsoft Office User</LastAuthor>
+  <Created>2016-10-28T00:25:06Z</Created>
+  <Version>15.0</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+  <PixelsPerInch>96</PixelsPerInch>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>17600</WindowHeight>
+  <WindowWidth>28800</WindowWidth>
+  <WindowTopX>0</WindowTopX>
+  <WindowTopY>460</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="comma1">
+  <Table ss:ExpandedColumnCount="18" ss:ExpandedRowCount="4" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="65" ss:DefaultRowHeight="16">
+   <Row>
+    <Cell><Data ss:Type="String">policyID</Data></Cell>
+    <Cell><Data ss:Type="String">statecode</Data></Cell>
+    <Cell><Data ss:Type="String">county</Data></Cell>
+    <Cell><Data ss:Type="String">eq_site_limit</Data></Cell>
+    <Cell><Data ss:Type="String">hu_site_limit</Data></Cell>
+    <Cell><Data ss:Type="String">fl_site_limit</Data></Cell>
+    <Cell><Data ss:Type="String">fr_site_limit</Data></Cell>
+    <Cell><Data ss:Type="String">tiv_2011</Data></Cell>
+    <Cell><Data ss:Type="String">tiv_2012</Data></Cell>
+    <Cell><Data ss:Type="String">eq_site_deductible</Data></Cell>
+    <Cell><Data ss:Type="String">hu_site_deductible</Data></Cell>
+    <Cell><Data ss:Type="String">fl_site_deductible</Data></Cell>
+    <Cell><Data ss:Type="String">fr_site_deductible</Data></Cell>
+    <Cell><Data ss:Type="String">point_latitude</Data></Cell>
+    <Cell><Data ss:Type="String">point_longitude</Data></Cell>
+    <Cell><Data ss:Type="String">line</Data></Cell>
+    <Cell><Data ss:Type="String">construction</Data></Cell>
+    <Cell><Data ss:Type="String">point_granularity</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">119736</Data></Cell>
+    <Cell><Data ss:Type="String">FL</Data></Cell>
+    <Cell><Data ss:Type="String">CLAY COUNTY</Data></Cell>
+    <Cell><Data ss:Type="Number">498960</Data></Cell>
+    <Cell><Data ss:Type="Number">498960</Data></Cell>
+    <Cell><Data ss:Type="Number">498960</Data></Cell>
+    <Cell><Data ss:Type="Number">498960</Data></Cell>
+    <Cell><Data ss:Type="Number">498960</Data></Cell>
+    <Cell><Data ss:Type="Number">792148.9</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">9979.2000000000007</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">30.102260999999999</Data></Cell>
+    <Cell><Data ss:Type="Number">-81.711776999999998</Data></Cell>
+    <Cell><Data ss:Type="String">Residential</Data></Cell>
+    <Cell><Data ss:Type="String">Masonry</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">448094</Data></Cell>
+    <Cell><Data ss:Type="String">FL</Data></Cell>
+    <Cell><Data ss:Type="String">CLAY COUNTY</Data></Cell>
+    <Cell><Data ss:Type="Number">1322376.3</Data></Cell>
+    <Cell><Data ss:Type="Number">1322376.3</Data></Cell>
+    <Cell><Data ss:Type="Number">1322376.3</Data></Cell>
+    <Cell><Data ss:Type="Number">1322376.3</Data></Cell>
+    <Cell><Data ss:Type="Number">1322376.3</Data></Cell>
+    <Cell><Data ss:Type="Number">1438163.57</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">30.063936000000002</Data></Cell>
+    <Cell><Data ss:Type="Number">-81.707663999999994</Data></Cell>
+    <Cell><Data ss:Type="String">Residential</Data></Cell>
+    <Cell><Data ss:Type="String">Masonry</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">206893</Data></Cell>
+    <Cell><Data ss:Type="String">FL</Data></Cell>
+    <Cell><Data ss:Type="String">CLAY COUNTY</Data></Cell>
+    <Cell><Data ss:Type="Number">190724.4</Data></Cell>
+    <Cell><Data ss:Type="Number">190724.4</Data></Cell>
+    <Cell><Data ss:Type="Number">190724.4</Data></Cell>
+    <Cell><Data ss:Type="Number">190724.4</Data></Cell>
+    <Cell><Data ss:Type="Number">190724.4</Data></Cell>
+    <Cell><Data ss:Type="Number">192476.78</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">30.089579000000001</Data></Cell>
+    <Cell><Data ss:Type="Number">-81.700455000000005</Data></Cell>
+    <Cell><Data ss:Type="String">Residential</Data></Cell>
+    <Cell><Data ss:Type="String">Wood</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <PageLayoutZoom>0</PageLayoutZoom>
+   <Selected/>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

@@ -18,6 +18,10 @@ function calculateMean(sum, count){
   return Math.floor(sum / count);
 }
 
+function calculateGeoMean(sum, count){
+  return Math.round(Math.pow(sum, 1/count));
+}
+
 
 //calculates the Standard Deviation
 function calculateStdD(mean, arr){
@@ -61,6 +65,7 @@ function App(){
         //the array to be passed into the stddeviation function
         var valArr = [];
         var sum = 0;
+        var sum2 = 1;
         var count = 0;
         //flag to see if the object has the property specified
         var calcboolean = false;
@@ -78,6 +83,7 @@ function App(){
           if(objArr[i].hasOwnProperty(findthis)){
             calcboolean = true;
             sum += parseInt(objArr[i][findthis]);
+            sum2 *= parseInt(objArr[i][findthis]);
             valArr.push(parseInt(objArr[i][findthis]));
             count++;
           }
@@ -88,6 +94,7 @@ function App(){
 
         if(calcboolean){
           console.log("The mean of the " + findthis + " is: " + calculateMean(sum, count));
+          console.log("The geometric mean of the " + findthis + " is: " + calculateGeoMean(sum2, count));
           console.log("The standard deviation of the " + findthis + " is: " + calculateStdD(calculateMean(sum, count), valArr));
         }
         else{
@@ -118,6 +125,9 @@ function App(){
         var valArr = [];
         //calculating the summation
         var sum =0;
+
+        //calculating the summation for geometric mean
+        var sum2 = 1;
         //count for calculating the mean
         var count =0;
         //flag to see if the object has the property specified
@@ -132,6 +142,7 @@ function App(){
           }
 
           else{
+            // console.log(result);
             //number of rows
             var len = result.Workbook.Worksheet[0].Table[0].Row.length;
 
@@ -145,13 +156,19 @@ function App(){
               }
             }
 
+            // console.log(rowDataArr);
+
             for(var k = 0; k < rowDataArr.length; k++){
               dataArr.push(rowDataArr[k][0]._);
             }
 
+            // console.log(dataArr);
+
             for(var one = 0; one < dataArr.length; one+=len){
               chunkArr.push(dataArr.slice(one, one+len));
             }
+
+            // console.log(chunkArr);
 
 
             var headerArr = chunkArr[0];
@@ -166,10 +183,12 @@ function App(){
               objArr.push(obj);
             }
 
+
             for(var c = 0; c < objArr.length; c++){
               if(objArr[c].hasOwnProperty(findthis)){
                 calcboolean = true;
                 sum += parseInt(objArr[c][findthis]);
+                sum2 *= parseInt(objArr[c][findthis]);
                 valArr.push(parseInt(objArr[c][findthis]));
                 count++;
               }
@@ -180,6 +199,7 @@ function App(){
 
             if(calcboolean){
               console.log("The mean of the " + findthis + " is: " + calculateMean(sum, count));
+              console.log("The geometric mean of the " + findthis + " is: " + calculateGeoMean(sum2, count));
               console.log("The standard deviation of the " + findthis + " is: " + calculateStdD(calculateMean(sum, count), valArr));
             }
             else{

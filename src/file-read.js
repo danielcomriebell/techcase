@@ -1,5 +1,12 @@
-//Application File
-//Will read in file and process it.
+/**
+  @author: Daniel Bell
+  @version: 1.00
+
+  This is the Application file.
+  Creates a App Object that contains readFile and readXML methods
+
+  Created using the fs, and xml2js libraries
+**/
 
 var fs = require('fs');
 var xml2js = require('xml2js');

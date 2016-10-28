@@ -5,13 +5,13 @@
   This is the driver of my technical case study for MasterCard.
   Creating an object based on file-read.js
   The object has 2 methods:
-  - readFile: Accepts 3 params:
-    First param: The File Path
-    Second param: The column within your data set that you would like to receive results based on.
-    Third param: The separator for your file. Ex: CSV(,) PSV('|'), TSV('\t')
-  - readXML: Accepts 2 params:
-    First param: The File Path of the .xml file
-    Second param: The column within your data set that you would like to receive results based on.
+  - readFile(filePath, column, separator) accepts three parameters
+    filePath: The path of the file you would like to read.
+    column: The name of the column within the dataset that you'd like to perform the calculations on.
+    separator: The character the data file is separated by.
+  - readXML(filePath, column) accepts two parameters
+    filePath: The path of the file you would like to read.
+    column: The name of the column within the dataset that you'd like to perform the calculations on.
 **/
 
 

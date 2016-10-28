@@ -17,10 +17,10 @@ Made using:
 * The app object has two methods
   * readXML
   * readFile
-* readXML(filePath, column) accepts three parameters
+* readXML(filePath, column) accepts two parameters
   * `filePath` The path of the file you would like to read.
   * `column` The name of the column within the dataset that you'd like to perform the calculations on.
-* readFile(filePath, column, separator)
+* readFile(filePath, column, separator) accepts three parameters
   * `filePath` The path of the file you would like to read.
   * `column` The name of the column within the dataset that you'd like to perform the calculations on.
   * `separator` The character the data file is separated by.

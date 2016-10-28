@@ -19,5 +19,5 @@
 var App = require('./file-read.js').App;
 var app = new App();
 
-app.readXML(__dirname + '/data/' + 'comma4.xml', "temperature");
+app.readXML(__dirname + '/data/' + 'comma4.xml', "pressure");
 // app.readFile(__dirname + '/data/' + 'comma2.txt', "pressure", ',');

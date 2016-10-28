@@ -15,11 +15,23 @@ var parser = new xml2js.Parser();
 //calculates the mean
 function calculateMean(sum, count){
   //rounding the average down to a whole number
-  return Math.floor(sum / count);
+  return (sum / count);
 }
 
+//calculates the Geometric Mean
 function calculateGeoMean(sum, count){
-  return Math.round(Math.pow(sum, 1/count));
+  return Math.pow(sum, 1/count);
+}
+
+function calculateHarmoicMean(arr){
+  var sum = 0;
+  var result;
+  for(var i = 0; i < arr.length; i++){
+    sum += (1 / arr[i]);
+  }
+
+  result = arr.length/sum;
+  return result;
 }
 
 
@@ -40,7 +52,7 @@ function calculateStdD(mean, arr){
     sum += sqarr[j];
   }
   //assigning final_val with the square root of the mean
-  final_val = Math.round(Math.sqrt(calculateMean(sum, sqarr.length-1)));
+  final_val = Math.sqrt(calculateMean(sum, sqarr.length-1));
   return final_val;
 }
 
@@ -82,9 +94,9 @@ function App(){
         for(var i = 0; i < objArr.length; i++){
           if(objArr[i].hasOwnProperty(findthis)){
             calcboolean = true;
-            sum += parseInt(objArr[i][findthis]);
-            sum2 *= parseInt(objArr[i][findthis]);
-            valArr.push(parseInt(objArr[i][findthis]));
+            sum += parseFloat(objArr[i][findthis]);
+            sum2 *= parseFloat(objArr[i][findthis]);
+            valArr.push(parseFloat(objArr[i][findthis]));
             count++;
           }
           else{
@@ -95,6 +107,7 @@ function App(){
         if(calcboolean){
           console.log("The mean of the " + findthis + " is: " + calculateMean(sum, count));
           console.log("The geometric mean of the " + findthis + " is: " + calculateGeoMean(sum2, count));
+          console.log("The harmonic mean of the " + findthis + " is: " + calculateHarmoicMean(valArr));
           console.log("The standard deviation of the " + findthis + " is: " + calculateStdD(calculateMean(sum, count), valArr));
         }
         else{
@@ -156,19 +169,13 @@ function App(){
               }
             }
 
-            // console.log(rowDataArr);
-
             for(var k = 0; k < rowDataArr.length; k++){
               dataArr.push(rowDataArr[k][0]._);
             }
 
-            // console.log(dataArr);
-
             for(var one = 0; one < dataArr.length; one+=len){
               chunkArr.push(dataArr.slice(one, one+len));
             }
-
-            // console.log(chunkArr);
 
 
             var headerArr = chunkArr[0];
@@ -187,9 +194,9 @@ function App(){
             for(var c = 0; c < objArr.length; c++){
               if(objArr[c].hasOwnProperty(findthis)){
                 calcboolean = true;
-                sum += parseInt(objArr[c][findthis]);
-                sum2 *= parseInt(objArr[c][findthis]);
-                valArr.push(parseInt(objArr[c][findthis]));
+                sum += parseFloat(objArr[c][findthis]);
+                sum2 *= parseFloat(objArr[c][findthis]);
+                valArr.push(parseFloat(objArr[c][findthis]));
                 count++;
               }
               else{
@@ -200,6 +207,7 @@ function App(){
             if(calcboolean){
               console.log("The mean of the " + findthis + " is: " + calculateMean(sum, count));
               console.log("The geometric mean of the " + findthis + " is: " + calculateGeoMean(sum2, count));
+              console.log("The harmonic mean of the " + findthis + " is: " + calculateHarmoicMean(valArr));
               console.log("The standard deviation of the " + findthis + " is: " + calculateStdD(calculateMean(sum, count), valArr));
             }
             else{
